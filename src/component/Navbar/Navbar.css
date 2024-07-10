@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+.main-container-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+    font-size: x-large;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100px;
+    
+ 
+ background-color: rgb(51, 48, 48);
+    
+}
+.main-container-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    }
