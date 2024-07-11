@@ -14,10 +14,7 @@ const Gallery = () => {
           Our Project Portfolio
         </div>
 
-        {/* All Projects heading */}
-        <div className="col-span-3 flex items-center justify-center text-white text-[30px] font-bold mb-4">
-          All Projects
-        </div>
+       
 
         {/* First image */}
         <div className="relative">

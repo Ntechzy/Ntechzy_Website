@@ -8,7 +8,7 @@ const Blog = () => {
       <div className='flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 rounded-lg p-6'>
         
         {/* First Box */}
-        <div className='flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 border-2 p-5'>
+        <div className='flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 border-0 p-5'>
           <div className='w-full lg:w-[200px] h-[300px]'>
             <img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg" alt="loading" className='w-full h-full object-cover rounded-lg'/>
           </div>
@@ -23,7 +23,7 @@ const Blog = () => {
         {/*<div className='hidden lg:block h-[300px] border-l-2 border-gray-500'></div>}
 
         {/* Second Box */}
-        <div className='flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 border-2 p-5'>
+        <div className='flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-4 border-0 p-5'>
           <div className='w-full lg:w-[200px] h-[300px]'>
             <img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg" alt="loading" className='w-full h-full object-cover rounded-lg'/>
           </div>
