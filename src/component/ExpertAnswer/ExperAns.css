@@ -1,0 +1,14 @@
+.answer {
+    transition: opacity 0.3s, max-height 0.3s; /* add transition effect */
+    overflow: hidden; /* add this to ensure smooth closing */
+  }
+  
+  .answer.show {
+    opacity: 1;
+    max-height: 100px; /* set a max height to ensure smooth closing */
+  }
+  
+  .answer.hide {
+    opacity: 0;
+    max-height: 0; /* set max height to 0 to close the answer */
+  }

@@ -38,7 +38,7 @@ const Services = () => {
         {servicesData.map((service, index) => (
           <div
             key={index} 
-            className="relative p-4 border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+            className="relative p-4 border rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300" data-aos="flip-right"
             onMouseEnter={() => setHoverIndex(index)}
             onMouseLeave={() => setHoverIndex(null)}
           >
