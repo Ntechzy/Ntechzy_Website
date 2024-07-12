@@ -8,25 +8,25 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden h-full">
+    <div className="h-full">
       {/* Gallery heading */}
-      <div className="text-white text-center text-5xl font-bold mb-8" data-aos="flip-right">
+      <div className="text-white text-center text-5xl font-bold mb-8" data-aos="fade-up">
         Gallery
       </div>
 
       {/* Project Portfolio heading */}
-      <div className="text-white text-center text-5xl font-bold mb-8 animate-" data-aos="flip-left">
+      <div className="text-white text-center text-5xl font-bold mb-8" data-aos="fade-up">
         Our Project Portfolio
       </div>
 
       {/* Grid layout for images */}
-      <div className="grid grid-cols-3 gap-4 text-white" data-aos="fade-up">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-white" data-aos="fade-up">
         {/* First image */}
         <div className="relative">
           <img
             src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-1.jpg"
             alt="UI & UX Designer"
-            className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105" data-aos="fade-up-right"
+            className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105"
           />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
             <div className="text-white text-center">
@@ -42,7 +42,7 @@ const Gallery = () => {
           <img
             src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-2.jpg"
             alt="Global Network"
-            className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105" data-aos="fade-up"
+            className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105"
           />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
             <div className="text-white text-center">
@@ -56,41 +56,9 @@ const Gallery = () => {
         {/* Third image */}
         <div className="relative">
           <img
-            src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-6.jpg " data-aos="fade-up-left"
+            src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-6.jpg"
             alt="Brand Logos"
             className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105"
-          />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
-            <div className="text-white text-center">
-              <h2 className="text-xl font-bold">Brand Logos</h2>
-              <p className="text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300">Read More</button>
-            </div>
-          </div>
-        </div>
-
-        {/* Fourth image */}
-        <div className="relative">
-          <img
-            src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-4.jpg" data-aos="fade-up-right"
-            alt="Brand Logos"
-            className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105"
-          />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
-            <div className="text-white text-center">
-              <h2 className="text-xl font-bold">Brand Logos</h2>
-              <p className="text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300">Read More</button>
-            </div>
-          </div>
-        </div>
-
-        {/* Fifth image */}
-        <div className="relative">
-          <img
-            src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg"
-            alt="Brand Logos"
-            className="w-full h-full object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105" data-aos="fade-up-left"
           />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
             <div className="text-white text-center">

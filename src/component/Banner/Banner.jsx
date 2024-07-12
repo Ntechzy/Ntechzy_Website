@@ -6,7 +6,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 
 const Banner = () => {
   return (
-    <div className='bg-cover bg-center h-screen flex flex-col justify-between p-4 lg:p-8'>
+    <div className='bg-cover bg-center h-screen flex flex-col justify-between p-4 lg:p-8 overflow-hidden' >
       <div className='flex flex-col lg:flex-row gap-6'>
         {/* Social Media Icons */}
         <div className='flex lg:flex-col items-center lg:items-start gap-4 lg:gap-6 mt-4 lg:mt-40'>
@@ -19,7 +19,7 @@ const Banner = () => {
         <div className='flex flex-col lg:flex-row items-center lg:items-start flex-grow gap-4 lg:gap-10'>
           {/* Text Section */}
           <div className='text-center lg:text-left text-white flex-grow p-4'>
-            <span className='block text-lg mt-2 lg:mt-20 font-semibold mb-2' data-aos="slide-right">Innovative Ideas</span>
+            <span className='block text-lg mt-2 lg:mt-20 font-semibold mb-2 overflow-x-hidden' data-aos="slide-right">Innovative Ideas</span>
             <h1 className='text-2xl lg:text-4xl font-bold mb-4' data-aos="slide-left">We offer You A digital Platform</h1>
             <p className='max-w-lg mx-auto lg:mx-0 text-sm lg:text-base' data-aos="slide-left"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi iusto ratione nemo culpa atque, laudantium ut nostrum consectetur animi quidem error rem impedit at. Dolorum ullam nemo assumenda nam!</p>
             <div className='flex flex-col items-center lg:items-start mt-5'>
