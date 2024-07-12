@@ -3,7 +3,7 @@ import { FaStar, FaStarHalf } from "react-icons/fa";
 
 const ClientFeedback = () => {
   return (
-    <div className='text-white py-8 px-4'>
+    <div className='text-white py-8 px-4' data-aos="fade-up">
       <div className='text-center text-2xl font-bold mb-4 text-slate-500'>
         Client Feedback
       </div>

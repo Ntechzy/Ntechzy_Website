@@ -17,7 +17,7 @@ const ExpertAns = () => {
   };
 
   return (
-    <div className='text-white py-5 px-4'>
+    <div className='text-white py-5 px-4' data-aos="fade-up">
       <div className='border-2 rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
         {/* FAQ Section */}
         <div className='mb-8'>

@@ -15,7 +15,7 @@ const SocialMediaPic = () => {
   const [hoveredIndex, setHoveredIndex] = React.useState(null);
 
   return (
-    <div className='text-white flex flex-wrap gap-5 p-4 justify-center lg:p-5 mx-auto max-w-7xl'>
+    <div className='text-white flex flex-wrap gap-5 p-4 justify-center lg:p-5 mx-auto max-w-7xl' data-aos="fade-up">
       {socialMediaLinks.map((social, index) => (
         <div key={index} className='relative w-full md:w-1/3 lg:w-1/4 xl:w-1/5 flex items-center'>
           <div

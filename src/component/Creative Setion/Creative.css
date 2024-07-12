@@ -1,0 +1,38 @@
+.animate-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .animate-flying-in {
+    animation: flying-in 0.5s ease-out forwards;
+  }
+  
+  @keyframes flying-in {
+    0% {
+      transform: translateY(50px) translateX(-50px) scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden; /* Hide content overflow */
+  }
+  
+  .section.active {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+  .section.inactive {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  

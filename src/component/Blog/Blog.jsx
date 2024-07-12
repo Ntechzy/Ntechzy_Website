@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
   return (
-    <div className='text-white py-8 px-4'>
+    <div className='text-white py-8 px-4' data-aos="fade-up">
       <div className='text-center font-bold text-[33px] mb-2'>Blog</div>
       <div className='text-center font-bold text-[30px] mb-6'>Digital World News</div>
       <div className='flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8 rounded-lg p-6'>

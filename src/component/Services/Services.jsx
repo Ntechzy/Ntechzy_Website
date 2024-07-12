@@ -31,9 +31,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-8 px-4 text-white">
-      <h1 className="text-4xl font-bold text-center mb-8">Services</h1>
-      <div className="text-center mb-8 font-bold">What We Have To Offer</div>
+    <div className="py-8 px-4 text-white" >
+      <h1 className="text-4xl font-bold text-center mb-8" data-aos="slide-left">Services</h1>
+      <div className="text-center mb-8 font-bold" data-aos="slide-right" >What We Have To Offer</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {servicesData.map((service, index) => (
           <div
