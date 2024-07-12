@@ -15,7 +15,14 @@
     <div id="root"></div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init(
+        {
+          offset: 12,
+          duration:900,
+          once:true,
+          easing:'ease-in',
+        }
+      );
     </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
