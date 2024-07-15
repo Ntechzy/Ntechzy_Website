@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className='sticky top-0 flex flex-wrap items-center justify-between p-4 bg-transparent text-white backdrop-blur-lg font-bold overflow-hidden'>
+    <nav className='sticky top-0 flex flex-wrap items-center justify-between p-4 bg-transparent text-white backdrop-blur-lg font-bold overflow-hidden z-[10000]'>
       {/* Logo */}
-      <div className='logo text-xl font-bold'>
+      <div className='logo text-2xl font-bold'>
         <Link to="/home">my logo</Link>
       </div>
 
       {/* Navigation Items */}
       <div className='nav-item flex items-center justify-center flex-grow mt-4 lg:mt-0'>
-        <ul className='flex flex-wrap justify-center lg:justify-end space-x-6 lg:space-x-7 gap-4'>
+        <ul className='flex flex-wrap justify-center lg:justify-end space-x-6 lg:space-x-7 gap-4 p-3  text-xl '>
           <li><Link to="/home" className="hover:text-gray-400">Home</Link></li>
           <li><Link to="/pages" className="hover:text-gray-400">Pages</Link></li>
           <li><Link to="/projects" className="hover:text-gray-400">Projects</Link></li>

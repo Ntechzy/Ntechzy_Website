@@ -15,9 +15,9 @@ const SocialMediaPic = () => {
   const [hoveredIndex, setHoveredIndex] = React.useState(null);
 
   return (
-    <div className='text-white flex flex-wrap gap-5 p-4 justify-center lg:p-5 mx-auto max-w-7xl' data-aos="fade-up">
+    <div className='text-white flex flex-wrap gap-5 p-4 justify-center lg:p-5 mx-auto max-w-7xl'>
       {socialMediaLinks.map((social, index) => (
-        <div key={index} className='relative w-full md:w-1/3 lg:w-1/4 xl:w-1/5 flex items-center'>
+        <div key={index} className='relative w-full md:w-1/3 lg:w-1/4 xl:w-1/5 flex items-center' data-aos="fade-up-right">
           <div
             className='relative w-full h-64 md:h-48 lg:h-56 xl:h-64 overflow-hidden rounded-lg'
             onMouseEnter={() => setHoveredIndex(index)}
@@ -26,12 +26,12 @@ const SocialMediaPic = () => {
             <img
               src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-1.jpg"
               alt="Social Media"
-              className='w-full h-full object-cover rounded-lg transition-opacity duration-300'
+              className='w-full h-full object-cover rounded-lg transition-opacity duration-300' data-aos="fade-up-right"
             />
             {hoveredIndex === index && (
               <div className='absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 hover:bg-opacity-75 transition-opacity duration-300'>
-                <social.icon className='text-4xl text-white mb-2 hover:opacity-100' />
-                <span className='text-sm font-bold text-white hover:opacity-100'>@Ntechzy {social.platform}</span>
+                <social.icon className='text-4xl text-white mb-2 hover:opacity-100' data-aos="flip-up"/>
+                <span className='text-sm font-bold text-white hover:opacity-100' data-aos="flip-up">@Ntechzy {social.platform}</span>
               </div>
             )}
             {hoveredIndex === index && (

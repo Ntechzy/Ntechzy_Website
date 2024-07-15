@@ -1,14 +1,11 @@
 .answer {
-    transition: opacity 0.3s, max-height 0.3s; /* add transition effect */
-    overflow: hidden; /* add this to ensure smooth closing */
-  }
-  
-  .answer.show {
-    opacity: 1;
-    max-height: 100px; /* set a max height to ensure smooth closing */
-  }
-  
-  .answer.hide {
-    opacity: 0;
-    max-height: 0; /* set max height to 0 to close the answer */
-  }
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.answer.show {
+  max-height: 500px; /* Adjust based on your content */
+  opacity: 1;
+}
