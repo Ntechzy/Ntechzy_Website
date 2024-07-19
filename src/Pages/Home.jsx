@@ -15,6 +15,7 @@ import Footer from '../component/Footer/Footer'
 const Home = () => {
   return (
   <>
+  <div id="formsID7375">div</div>
   <Banner/>
   <Creative/>
   <Gallery/>
@@ -30,3 +31,4 @@ const Home = () => {
 }
 
 export default Home
+
