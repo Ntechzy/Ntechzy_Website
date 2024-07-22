@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ReachUs = () => {
+const ReachUs = ({props}) => {
   return (
     <div className='flex flex-col lg:flex-row items-center justify-center p-8'>
       {/* Picture Section */}
-      <div className='w-full lg:w-1/2 p-4'>
+      <div className='w-full lg:w-1/2 p-4'data-aos="flip-right">
         <img 
           src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/gaaga-Process-Content-Img-1-1.png" 
           alt="Reach Us" 
@@ -13,7 +13,7 @@ const ReachUs = () => {
       </div>
       
       {/* Form Section */}
-      <div className='w-full lg:w-1/2 p-4'>
+      <div className='w-full lg:w-1/2 p-4' data-aos="flip-left">
         <form className='border p-8 rounded-lg'>
           <h1 className='text-3xl font-bold mb-6 text-white'>Reach Us</h1>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>

@@ -4,7 +4,7 @@ const Analytical = () => {
   return (
     <div className='text-white py-12 px-4 lg:px-20' data-aos="flip-right">
       <div className='flex flex-col lg:flex-row items-center gap-8'>
-        <div className='flex-1'>
+        <div className='flex-1' data-aos="flip-left">
           <h1 className='text-2xl lg:text-3xl mb-4'>Analytical Skill</h1>
           <h1 className='font-bold text-3xl lg:text-5xl mb-4'>Advance Technology Tools & Platforms</h1>
           <p className='mb-6'>
@@ -19,7 +19,7 @@ const Analytical = () => {
           <img 
             src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/gaaga-Process-Content-Img-1-1.png" 
             alt="Analytical Tools"
-            className='w-full h-auto object-cover rounded-lg'
+            className='w-full h-auto object-cover rounded-lg' data-aos="flip-right"
           />
         </div>
       </div>

@@ -4,11 +4,11 @@ import { FaLightbulb, FaCogs, FaPuzzlePiece, FaProjectDiagram } from 'react-icon
 const Strategy = () => {
   return (
     <div className='text-white py-12 px-4 lg:px-20'>
-      <div className='text-center mb-8'>
+      <div className='text-center mb-8' data-aos="flip-right">
         <h1 className='text-2xl lg:text-3xl mb-4'>Procedure</h1>
         <h1 className='font-bold text-3xl lg:text-5xl'>Our Best Strategy</h1>
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
+      <div className='grid grid-cols-1 lg:grid-cols-4 gap-8' data-aos="flip-up">
         {/* Step 1 */}
         <div className='group bg-gray-800 p-6 rounded-lg text-center transform transition duration-500 hover:bg-red-600 hover:-translate-y-2'>
           <FaLightbulb className='text-3xl mx-auto mb-4 group-hover:text-white' />

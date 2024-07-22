@@ -27,7 +27,31 @@ const Services = () => {
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
       link: '#service4'
-    }
+    },
+    {
+      title: 'Creative Web Designs',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+      link: '#service4'
+    },
+    {
+      title: 'Creative Web Designs',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+      link: '#service4'
+    },
+    {
+      title: 'Creative Web Designs',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+      link: '#service4'
+    },
+    {
+      title: 'Creative Web Designs',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+      link: '#service4'
+    },
   ];
 
   return (

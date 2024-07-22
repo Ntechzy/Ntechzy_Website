@@ -38,18 +38,18 @@ const Footer = () => {
         </div>
         <hr className="my-8" />
         <div className="flex flex-col md:flex-row items-center justify-between md:justify-start">
-          <ul className="flex flex-wrap gap-4 mb-4 md:mb-0 cursor-pointer"data-aos="fade-up">
+          <ul className="flex flex-wrap gap-4 mb-4 md:mb-0 cursor-pointer">
             <li>Home</li>
             <li>Pages</li>
             <li>Portfolio</li>
             <li>Services</li>
           </ul>
-          <div className="flex gap-4 md:ml-auto cursor-pointer" data-aos="fade-up">
+          <div className="flex gap-4 md:ml-auto cursor-pointer">
             <FaLinkedin className="text-2xl" />
             <FaInstagram className="text-2xl" />
             <FaFacebook className="text-2xl" />
           </div>
-          <div className="mt-4 md:mt-0 md:text-center text-center" data-aos="fade-up">
+          <div className="mt-4 md:mt-0 md:text-center text-center">
             <p className="text-sm ml-[200px]">&copy; WedesignTech. All Rights Reserved.</p>
           </div>
         </div>

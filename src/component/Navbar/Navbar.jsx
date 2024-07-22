@@ -36,7 +36,7 @@ const Navbar = () => {
           <li><Link to="/services" className="hover:text-gray-400" onClick={closeMenu}>Services</Link></li>
           <li><Link to="/portfolio" className="hover:text-gray-400" onClick={closeMenu}>Portfolio</Link></li>
           <li><Link to="/blog" className="hover:text-gray-400" onClick={closeMenu}>Blog</Link></li>
-          <li><Link to="/contact-us" className="hover:text-gray-400" onClick={closeMenu}>Contact Us</Link></li>
+          <li><Link to="/contact-Us" className="hover:text-gray-400" onClick={closeMenu}>Contact Us</Link></li>
           <li className='lg:hidden'>
             <button onClick={closeMenu} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
               Let's Start
