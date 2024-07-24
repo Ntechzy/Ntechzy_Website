@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as XLSX from 'xlsx';
 import axios from 'axios';
+import Footer from '../../HomeComponent/Footer';
 
 const BlogList = () => {
   const [blogs, setBlogs] = useState([]);
@@ -9,7 +10,7 @@ const BlogList = () => {
   useEffect(() => {
     const fetchExcelFile = async () => {
       try {
-        const response = await axios.get('/Blog(3).xlsx', {
+        const response = await axios.get('/Blog(4).xlsx', {
           responseType: 'arraybuffer',
         });
         const data = new Uint8Array(response.data);
@@ -44,23 +45,31 @@ const BlogList = () => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen p-8">
+    <>
+    <div className="min-h-screen p-8">
+    <div className='flex flex-col items-center p-3 gap-11 text-white'>
+     <div className='font-bold text-4xl '>All Blogs</div>
+   
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="bg-gray-800 rounded-lg p-6 shadow-md flex flex-col"
+            className="bg-gray-800 rounded-lg p-6 shadow-md flex flex-col" data-aos="flip-right"
           >
-            <h2 className="text-2xl font-bold text-white mb-4">{truncate(blog.Title, 25)}</h2>
-            <div className='flex flex-row justify-between'><p className="text-white mb-4">{blog.Date}</p>
-            <p className="text-white mb-4">{blog.Author}</p></div>
-            {<img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-1.jpg" alt={blog.Title} className="mb-4 w-full h-auto rounded" />}
+            <h2 className="text-2xl font-bold text-white mb-4" data-aos="fade-up">{truncate(blog.Title, 25)}</h2>
+            <div className='flex flex-row justify-between'><p className="text-white mb-4" data-aos="fade-up">{blog.Date}</p>
+            <p className="text-white mb-4" data-aos="fade-up">{blog.Author}</p></div>
+            {<img src={blog.ImageUrl} alt={blog.Title} className="mb-4 w-full h-auto rounded" />}
+           
             <p className="text-white mb-4 ">{truncate(blog.Content, 40)}</p>
-            <Link to={`/blog/${blog.Id}`} className="text-blue-500 hover:underline mt-auto">Read More..</Link>
+            <Link to={`/blog/${blog.Id}`} className="text-blue-500 hover:underline mt-auto" >Read More..</Link>
           </div>
         ))}
       </div>
+      </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

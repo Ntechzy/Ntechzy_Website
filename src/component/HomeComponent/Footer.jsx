@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className=" text-white" >
@@ -14,7 +14,7 @@ const Footer = () => {
                 className="rounded-full"
               />
             </div>
-            <p className="text-center md:text-left" data-aos="fade-up">
+            <p className="text-center md:text-left" data-aos="flip-right">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aut aspernatur a temporibus fugit, illum
               soluta, animi quos, id reiciendis voluptatum? Placeat, dolores vitae. Reprehenderit nostrum doloremque
               ad esse pariatur!
@@ -39,10 +39,12 @@ const Footer = () => {
         <hr className="my-8" />
         <div className="flex flex-col md:flex-row items-center justify-between md:justify-start">
           <ul className="flex flex-wrap gap-4 mb-4 md:mb-0 cursor-pointer">
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Portfolio</li>
-            <li>Services</li>
+          <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
+          <li><Link to="/about" className="hover:text-gray-400">About</Link></li>
+          <li><Link to="/services" className="hover:text-gray-400">Services</Link></li>
+          <li><Link to="/portfolio" className="hover:text-gray-400">Portfolio</Link></li>
+          <li><Link to="/blog" className="hover:text-gray-400">Blog</Link></li>
+          <li><Link to="/contact-Us" className="hover:text-gray-400">Contact Us</Link></li>
           </ul>
           <div className="flex gap-4 md:ml-auto cursor-pointer">
             <FaLinkedin className="text-2xl" />
@@ -50,7 +52,7 @@ const Footer = () => {
             <FaFacebook className="text-2xl" />
           </div>
           <div className="mt-4 md:mt-0 md:text-center text-center">
-            <p className="text-sm ml-[200px]">&copy; WedesignTech. All Rights Reserved.</p>
+            <p className="text-sm ml-[200px]">&copy; Ntechzy All Rights Reserved.</p>
           </div>
         </div>
       </div>

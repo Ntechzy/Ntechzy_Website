@@ -11,9 +11,9 @@ const Banner = () => {
       <div className='flex flex-col lg:flex-row lg:items-center gap-11 ml-11'>
         {/* Social Media Icons */}
         <div className='flex lg:flex-col items-center lg:items-start gap-6 lg:gap-6 mt-4 lg:mt-40' data-aos="flip-down">
-          <FiFacebook className='text-white text-2xl'/>
-          <FaInstagram className='text-white text-2xl'/>
-          <CiTwitter className='text-white text-2xl'/>
+          <FiFacebook className='text-white text-2xl cursor-pointer'/>
+          <FaInstagram className='text-white text-2xl cursor-pointer'/>
+          <CiTwitter className='text-white text-2xl cursor-pointer'/>
         </div>
 
         {/* Text and Image Container */}

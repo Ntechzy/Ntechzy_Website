@@ -11,7 +11,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchExcelFile = async () => {
       try {
-        const response = await axios.get('/Blog(3).xlsx', {
+        const response = await axios.get('/Blog(4).xlsx', {
           responseType: 'arraybuffer',
         });
         console.log(response)
@@ -53,9 +53,9 @@ const BlogDetails = () => {
 
   return (
     <div className="bg-gray-900 min-h-screen flex items-center justify-center p-8 text-white">
-      <div className="max-w-4xl w-full bg-gray-800 rounded-lg p-6 shadow-lg">
-        <h1 className="text-4xl font-bold mb-4">{blog.Title}</h1>
-        {<img src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-1.jpg" alt="image" className="flex items-center justify-center mb-4 max-w-full h-auto rounded border-1" />}
+      <div className="max-w-4xl w-full bg-gray-800 rounded-lg p-6 shadow-lg" data-aos="fade-up">
+        <h1 className="text-4xl font-bold mb-4" data-aos="flip-left">{blog.Title}</h1>
+        {<img src={blog.ImageUrl} alt="image" className="flex items-center justify-center mb-4 max-w-full h-auto rounded border-1" />}
         <p className="mb-4"><span className="font-semibold">Author:</span> {blog.Author}</p>
         <p className="mb-4"><span className="font-semibold">Date:</span> {blog.Date}</p>
         <p>{blog.Content}</p>

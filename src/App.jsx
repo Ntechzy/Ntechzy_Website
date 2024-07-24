@@ -7,10 +7,12 @@ import Services from './Pages/Services'
 import ContactUs from './Pages/ContactUs'
 import BlogPage from './Pages/BlogPage'
 import BlogDetail from './component/BlogComponent/BlogShow/BlogDetails'
+import ScrollToTop from './Pages/ScrollToTop'
 const App = () => {
   return (
     <>
     <Router>
+    <ScrollToTop/>
     <Navbar/>
     <Routes>
     <Route path='/' exact element={<Home/>}/>

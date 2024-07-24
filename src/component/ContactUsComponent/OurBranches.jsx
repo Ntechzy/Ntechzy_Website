@@ -38,7 +38,7 @@ const OurBranches = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="Font-bold  p-2">
+          <div className="Font-bold  p-2 flex gap-4">
             <address>Noida Office</address>
             <address>Phone no- 5678998765</address>
             <address>Email Id-xyz@gmail</address>
