@@ -5,6 +5,8 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Services from './Pages/Services'
 import ContactUs from './Pages/ContactUs'
+import BlogPage from './Pages/BlogPage'
+import BlogDetail from './component/BlogComponent/BlogShow/BlogDetails'
 const App = () => {
   return (
     <>
@@ -15,6 +17,8 @@ const App = () => {
     <Route path='/about' exact element={<About/>}/>
     <Route path='/services' exact element={<Services/>}/>
     <Route path='/contact-Us' exact element={<ContactUs/>}/>
+    <Route path='/blog/*' exact element={<BlogPage/>}/>
+    {/* <Route path='/blog/:id' exact element={<BlogDetail/>}/> */}
     </Routes>
     </Router>
     </>
