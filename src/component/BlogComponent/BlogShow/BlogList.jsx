@@ -9,7 +9,7 @@ const BlogList = () => {
   useEffect(() => {
     const fetchExcelFile = async () => {
       try {
-        const response = await axios.get('/src/component/BlogComponent/Blog(3).xlsx', {
+        const response = await axios.get('/Blog(3).xlsx', {
           responseType: 'arraybuffer',
         });
         const data = new Uint8Array(response.data);

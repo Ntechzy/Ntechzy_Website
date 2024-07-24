@@ -11,9 +11,10 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchExcelFile = async () => {
       try {
-        const response = await axios.get('/src/component/BlogComponent/Blog(3).xlsx', {
+        const response = await axios.get('/Blog(3).xlsx', {
           responseType: 'arraybuffer',
         });
+        console.log(response)
         const data = new Uint8Array(response.data);
         const workbook = XLSX.read(data, { type: 'array' });
         const sheetName = workbook.SheetNames[0];
