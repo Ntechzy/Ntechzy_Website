@@ -51,9 +51,9 @@ const Footer = () => {
             <FaInstagram className="text-2xl" />
             <FaFacebook className="text-2xl" />
           </div>
-          <div className="mt-4 md:mt-0 md:text-center text-center">
+          {/* <div className="mt-4 md:mt-0 md:text-center text-center">
             <p className="text-sm ml-[200px]">&copy; Ntechzy All Rights Reserved.</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
