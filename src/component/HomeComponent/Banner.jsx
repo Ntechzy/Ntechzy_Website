@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className='bg-cover bg-center h-full flex flex-col justify-center overflow-hidden'>
      
-      <div className='flex flex-col lg:flex-row lg:items-center gap-11 ml-11'>
+      <div className='flex flex-col lg:flex-row lg:items-center gap-11 '>
         {/* Social Media Icons */}
         <div className='flex lg:flex-col items-center lg:items-start gap-6 lg:gap-6 mt-4 lg:mt-40' data-aos="flip-down">
           <FiFacebook className='text-white text-2xl cursor-pointer'/>
@@ -22,7 +22,7 @@ const Banner = () => {
           <div className='flex flex-col justify-center text-center lg:text-left text-white flex-grow lg:ml-20'>
             <span className='block text-lg lg:text-xl mt-2 lg:mt-20 font-semibold mb-2 overflow-x-hidden' data-aos="slide-right">Innovative Ideas</span>
             <h1 className='text-3xl lg:text-5xl font-bold mb-4' data-aos="slide-left">We offer You A digital Platform</h1>
-            <p className='max-w-lg mx-auto lg:mx-0 text-sm lg:text-base' data-aos="slide-left">
+            <p className='p-2 max-w-lg mx-auto ml-[30px] lg:mx-0 text-sm lg:text-base' data-aos="slide-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi iusto ratione nemo culpa atque, laudantium ut nostrum consectetur animi quidem error rem impedit at. Dolorum ullam nemo assumenda nam!
             </p>
             <div className='flex flex-col items-center lg:items-start mt-5'>
