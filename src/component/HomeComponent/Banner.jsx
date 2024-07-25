@@ -17,9 +17,9 @@ const Banner = () => {
         </div>
 
         {/* Text and Image Container */}
-        <div className='flex flex-col ml-[-30px] lg:flex-row items-center  lg:gap-11 flex-grow p-4 lg:p-0'>
+        <div className='flex flex-col ml-[-30px] lg:flex-row items-center gap-4 lg:gap-11 flex-grow lg:p-0'>
           {/* Text Section */}
-          <div className='flex flex-col justify-center text-center lg:text-left text-white flex-grow ml-10 lg:ml-20'>
+          <div className='flex flex-col justify-center text-center lg:text-left text-white flex-grow lg:ml-20'>
             <span className='block text-lg lg:text-xl mt-2 lg:mt-20 font-semibold mb-2 overflow-x-hidden' data-aos="slide-right">Innovative Ideas</span>
             <h1 className='text-3xl lg:text-5xl font-bold mb-4' data-aos="slide-left">We offer You A digital Platform</h1>
             <p className='max-w-lg mx-auto lg:mx-0 text-sm lg:text-base' data-aos="slide-left">
