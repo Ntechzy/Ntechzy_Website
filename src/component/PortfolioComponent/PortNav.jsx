@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const PortNav = () => {
   return (
     <nav className="top-0 left-0 w-full bg-gray-800 text-white p-4 shadow-md">
-      <ul className="flex justify-center gap-10 font-bold">
+      <ul className="flex justify-center gap-10 font-bold" data-aos="flip-left">
         <li>
           <Link to="/portfolio/campaign" className="cursor-pointer hover:underline p-2">Campaign</Link>
         </li>
