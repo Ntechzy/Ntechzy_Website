@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import portfolioData from './PortfolioData_office.json';
+import portfolioData_political from './PortfolioData_political.json';
 
 const PortfolioDetailOffice = () => {
   const { id } = useParams();
-  const item = portfolioData.find(p => p.id === parseInt(id));
+  const item = portfolioData_political.find(p => p.id === parseInt(id));
 
   if (!item) {
     return <div className="text-white font-bold text-center text-[30px] md:text-[100px]">Portfolio item not found in office</div>;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import portfolioData from './PortfolioData_campaign.json';
+import PortfolioData_ntechzy from './PortfolioData_ntechzy.json';
 
-const PortfolioDetail = () => {
+const Portfolio_ntechzy_Details = () => {
   const { id } = useParams();
-  const item = portfolioData.find(p => p.id === parseInt(id));
+  const item = PortfolioData_ntechzy.find(p => p.id === parseInt(id));
 
   if (!item) {
     return <div className="text-white font-bold text-center text-[30px] md:text-[100px]">Portfolio item not found</div>;
@@ -27,4 +27,4 @@ const PortfolioDetail = () => {
   );
 };
 
-export default PortfolioDetail;
+export default Portfolio_ntechzy_Details;

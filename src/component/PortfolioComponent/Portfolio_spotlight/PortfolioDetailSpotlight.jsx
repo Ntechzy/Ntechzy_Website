@@ -1,10 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import portfolioData from './PortfolioData_services.json';
+import portfolioData_spotlight from './PortfolioData_spotlight.json';
 
-const PortfolioDetail = () => {
+const PortfolioDetailSpotlight = () => {
   const { id } = useParams();
-  const item = portfolioData.find(p => p.id === parseInt(id));
+  const item = portfolioData_spotlight.find(p => p.id === parseInt(id));
 
   if (!item) {
     return <div className="text-white font-bold text-center text-[30px] md:text-[100px]">Portfolio item not found in Services</div>;
@@ -27,4 +27,4 @@ const PortfolioDetail = () => {
   );
 };
 
-export default PortfolioDetail;
+export default PortfolioDetailSpotlight;

@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import portfolioData from "./PortfolioData_services.json";
+import portfolioData_details from "./PortfolioData_ntechzy.json"
 
-const Portfolio_services = () => {
-  const [data] = useState(portfolioData);
+const Portfolio_ntechzy = () => {
+  const [data] = useState(portfolioData_details);
   const truncate = (str, n) => {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   };
+
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
       {data.map((item) => (
         <Link
-          to={`/portfolio/services/${item.id}`}
+          to={`/portfolio/ntechzy/${item.id}`}
           key={item.id}
-          className="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 transition duration-300" data-aos="flip-right"
+          className="bg-white shadow-lg rounded-lg overflow-hidden  
+       hover:bg-[#71717a] " data-aos="flip-right"
         >
           <img
             src={item.image}
@@ -31,4 +33,4 @@ const Portfolio_services = () => {
   );
 };
 
-export default Portfolio_services;
+export default Portfolio_ntechzy;
