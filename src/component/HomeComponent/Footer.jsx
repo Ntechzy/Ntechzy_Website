@@ -22,9 +22,10 @@ const Footer = () => {
           </div>
           <div className="space-y-4 md:ml-6 lg:ml-0" data-aos="flip-right">
             <div className="font-bold text-xl">Contact</div>
-            <div className="text-xl">Phone no. 89374254445</div>
-            <div className="text-xl">Mail: info@gmail.com</div>
-            <div className="text-xl">No.58 A, East Madison</div>
+            <div className="text-xl">Phone no. 7068595192
+</div>
+            <div className="text-xl">Mail: ntechzy@gmail.com</div>
+            <div className="text-xl">Gf - 31 , sng plaza ansal golf near by pari chowk greater Noida</div>
             <div className="text-xl">Working hours: 8</div>
           </div>
           <div className="space-y-4 md:ml-6 lg:ml-0" data-aos="flip-left">
