@@ -118,11 +118,11 @@ const Services = () => {
               Know More
             </button>
             <div className={`transition-all duration-300 ${hoverIndex === index ? 'max-h-32' : 'max-h-0'} overflow-hidden mt-4`}>
-              <img
+              {/* <img
                 // src={service.imageUrl}
                 alt={service.title}
                 className="w-full object-cover"
-              />
+              /> */}
             </div>
           </div>
         ))}
