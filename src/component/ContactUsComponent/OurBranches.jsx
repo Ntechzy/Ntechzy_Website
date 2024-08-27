@@ -12,7 +12,7 @@ const OurBranches = () => {
       <div className="flex flex-col lg:flex-row gap-5">
         <div className="flex flex-col items-center lg:items-start">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.2426353875685!2d80.29012337536498!3d26.480131478546852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c39cd2394ab3d%3A0x86e54e5902e3adcc!2sCareerkick%20Services%20Kanpur%20%7C%20Best%20IIT-JEE%20%26%20NEET%20Counselling%20Platform!5e0!3m2!1sen!2sin!4v1721710938694!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.456751594629!2d80.3010295!3d26.4732347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c390bc50eb861%3A0xcb92eaeb9f752362!2sNTECHZY%20PVT.%20LTD!5e0!3m2!1sen!2sin!4v1724667643390!5m2!1sen!2sin"
             width="100%"
             height="300"
             allowFullScreen
@@ -38,8 +38,9 @@ const OurBranches = () => {
           ></iframe>
           <div className="font-bold p-2 flex flex-row gap-2 lg:gap-4 text-center lg:text-left">
             <address>Noida Office</address>
-            <address>Phone no: 5678998765</address>
-            <address>Email Id: xyz@gmail.com</address>
+            <address>Phone no: 7068595192</address>
+            <address>Email Id: ntechzy@gmail.com</address>
+            {/* <address className="w-11">address: Gf - 31 , sng plaza ansal golf near by pari chowk greater Noida</address> */}
           </div>
         </div>
       </div>

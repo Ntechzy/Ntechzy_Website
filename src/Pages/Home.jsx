@@ -15,7 +15,7 @@ const Home = () => {
   return (
   <>
   <Banner/>
-  <Creative/>
+  {/* <Creative/> */}
   <Gallery/>
   <Marketing/>
   <Services/>

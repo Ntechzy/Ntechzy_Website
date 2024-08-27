@@ -11,7 +11,7 @@ const BlogDetails = () => {
   useEffect(() => {
     const fetchExcelFile = async () => {
       try {
-        const response = await axios.get('/Blog(4).xlsx', {
+        const response = await axios.get('/Blog.xlsx', {
           responseType: 'arraybuffer',
         });
         console.log(response)

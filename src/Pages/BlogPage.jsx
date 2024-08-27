@@ -11,7 +11,7 @@ const BlogPage = () => {
   useEffect(() => {
     const fetchExcelFile = async () => {
       try {
-        const response = await axios.get('/src/component/BlogComponent/Blog.xlsx', {
+        const response = await axios.get('/Blog.xlsx', {
           responseType: 'arraybuffer',
         });
         const data = new Uint8Array(response.data);
@@ -31,6 +31,8 @@ const BlogPage = () => {
           return blog;
         });
 
+        console.log(blogs);
+        
         setBlogs(blogs);
       } catch (error) {
         console.error('Error fetching or processing the Excel file', error);

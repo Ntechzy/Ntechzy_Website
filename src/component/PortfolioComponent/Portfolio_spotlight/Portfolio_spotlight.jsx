@@ -16,14 +16,16 @@ const Portfolio_spotlight = () => {
           key={item.id}
           className="bg-white shadow-lg rounded-lg overflow-hidden hover:bg-gray-200 transition duration-300" data-aos="flip-right"
         >
-          <img
-            src={item.image}
-            alt={item.title}
-            className="w-full h-48 object-cover"
-          />
-          <div className="p-4">
+          <div className="p-4 relative h-64"> {/* Ensure the parent div has a set height */}
             <h2 className="font-bold text-xl mb-2">{item.title}</h2>
-            <p className="text-gray-700">{truncate(item.description, 90)}</p>
+            <iframe
+              src={item.link}
+              title={item.title}
+              className="absolute top-0 left-0 w-full h-full" 
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </Link>
       ))}

@@ -1,19 +1,24 @@
 import React from 'react';
 import { FiFacebook } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
-import { CiTwitter } from "react-icons/ci";
+import { FaInstagram ,FaLinkedinIn} from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
-
+import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <div className='bg-cover bg-center h-full flex flex-col justify-center overflow-hidden'>
-     
-      <div className='flex flex-col lg:flex-row lg:items-center gap-11 '>
+      <div className='flex flex-col lg:flex-row lg:items-center gap-11'>
         {/* Social Media Icons */}
         <div className='flex lg:flex-col items-center lg:items-start gap-6 lg:gap-6 mt-4 lg:mt-40' data-aos="flip-down">
-          <FiFacebook className='text-white text-2xl cursor-pointer'/>
-          <FaInstagram className='text-white text-2xl cursor-pointer'/>
-          <CiTwitter className='text-white text-2xl cursor-pointer'/>
+          {/* Updated Icons */}
+          <Link to ="https://www.facebook.com/ntechzypvtltd/" target="_blank"className='bg-white p-2 rounded-full'>
+            <FiFacebook className='text-blue-600 text-2xl cursor-pointer' />
+          </Link>
+          <Link to ="https://in.linkedin.com/company/ntechzy" target="_blank" className='bg-white p-2 rounded-full'>
+            <FaLinkedinIn className='text-pink-600 text-2xl cursor-pointer' />
+          </Link>
+          <Link to ="https://www.instagram.com/ntechzy/?hl=en" target="_blank" className='bg-white p-2 rounded-full'>
+            <FaInstagram className='text-blue-400 text-2xl cursor-pointer' />
+          </Link>
         </div>
 
         {/* Text and Image Container */}
@@ -28,15 +33,15 @@ const Banner = () => {
             <div className='flex flex-col items-center lg:items-start mt-5'>
               <span className='text-white text-lg font-semibold' data-aos="slide-left">Get Started</span>
               <div className='flex flex-row items-center gap-3 lg:gap-5 mt-3' data-aos="slide-left">
-                <FaCirclePlay className='text-white text-3xl'/>
-                <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' data-aos="zoom-out">View Videos</button>
+                <FaCirclePlay className='text-white text-3xl' />
+                <Link to="https://www.youtube.com/@SpotlightwithNikhil" target='_blank' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' data-aos="zoom-out">View Videos</Link>
               </div>
             </div>
           </div>
 
           {/* Image Section */}
-          <div className=' overflow-hidden relative  w-full lg:w-1/2 flex justify-end'>
-            <img src='https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Slider-1-Image-1.jpg' alt='Banner Image' className='w-full h-auto object-cover rounded-lg z-0' data-aos="zoom-in"/>
+          <div className='overflow-hidden relative w-full lg:w-1/2 flex justify-end'>
+            <img src='https://gaaga.wpengine.com/wp-content/uploads/2023/06/Gaaga-Slider-1-Image-1.jpg' alt='Banner Image' className='w-full h-auto object-cover rounded-lg z-0' data-aos="zoom-in" />
           </div>
         </div>
       </div>

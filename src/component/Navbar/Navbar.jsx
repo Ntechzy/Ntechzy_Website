@@ -14,16 +14,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 flex flex-wrap items-center justify-between p-4 bg-transparent text-white backdrop-blur-lg font-bold z-[10000]">
+    <nav className="sticky top-0 flex flex-wrap items-center justify-between p-4 bg-transparent text-white backdrop-blur-lg font-bold z-[10000]"> 
       {/* Logo */}
       <div className="logo text-2xl font-bold">
         <Link to="/" onClick={closeMenu} className="relative">
           <img
-            src="assets/ntechzylogo.png"
+            src="assets/ntechzy_logo_white_text.png"
             alt="Ntechzy"
-            className=" transition-transform  duration-300 hover:scale-110 hover:shadow-lg"
+            className="transition-transform  duration-300 hover:scale-110 hover:shadow-lg"
 
-            style={{ width: '100px', height: '100px'}}
+            style={{ marginLeft:"30px", width: '80px', height: '30px',borderRadius:"15px"}}
           />
         </Link>
         
