@@ -27,12 +27,12 @@ const ServicesNav = ({ closeMenu }) => {
     setActiveMainHeading(null); 
   };
 
-  const handleMouseEnter = (index) => {
-    setActiveMainHeading(index);
-  };
-
-  const handleMouseLeave = () => {
-    setActiveMainHeading(null);
+  const handleMainHeadingClick = (index) => {
+    if (activeMainHeading === index) {
+      setActiveMainHeading(null);
+    } else {
+      setActiveMainHeading(index);
+    }
   };
 
   return (
@@ -40,29 +40,42 @@ const ServicesNav = ({ closeMenu }) => {
       <ul className="flex space-x-4">
         <li className="relative group">
           <span
-            className="text-white hover:text-gray-400 cursor-pointer transition-transform duration-300"
+            className="text-white hover:text-gray-400 m-auto flex items-center justify-center text-center cursor-pointer transition-transform duration-300"
             onClick={toggleMainMenu}
           >
             Services
           </span>
           {isMainMenuOpen && (
-            <ul
-              className="absolute mt-2 bg-white font-semibold text-gray-800 shadow-lg rounded-md space-y-2 z-10 w-max"
-              onMouseLeave={handleMouseLeave} // Hide subheadings on mouse leave
-            >
+            <ul className="absolute mt-2 bg-white font-semibold text-gray-800 shadow-lg rounded-md space-y-2 z-10 w-max">
               {serviceData.map((service, index) => (
                 <li
                   key={index}
                   className="relative group"
-                  onMouseEnter={() => handleMouseEnter(index)}
                 >
+                  {/* Main heading click event for small screens */}
                   <span
                     className="block px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                    onClick={() => handleMainHeadingClick(index)} // Handle click for both small and larger screens
                   >
                     {service.mainHeading}
                   </span>
-                  {activeMainHeading === index && service.subHeadings.length > 0 && (
-                    <ul className="absolute top-0 left-full ml-2 bg-gray-100 text-gray-800 shadow-lg rounded-md space-y-2 w-max">
+
+                  {/* Subheadings for small screens */}
+                  {activeMainHeading === index && (
+                    <ul className="space-y-2 border-2 border-blue-100 bg-gray-300 text-gray-800 rounded-md md:hidden">
+                      {service.subHeadings.map((sub, subIndex) => (
+                        <li key={subIndex} className="px-4 py-2 hover:bg-gray-200">
+                          <Link to={sub.url} onClick={closeMenu}>
+                            {sub.subHeading}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  {/* Subheadings for larger screens (on hover) */}
+                  {activeMainHeading === index && (
+                    <ul className="hidden md:absolute top-0 left-full ml-2 bg-gray-100 text-gray-800 shadow-lg rounded-md space-y-2 w-max md:block">
                       {service.subHeadings.map((sub, subIndex) => (
                         <li key={subIndex} className="px-4 py-2 hover:bg-gray-200">
                           <Link to={sub.url} onClick={closeMenu}>

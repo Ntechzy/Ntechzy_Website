@@ -77,7 +77,7 @@ const Gallery = () => {
       </div>
 
       {/* Grid layout for images */}
-      <div className="grid grid-cols-3 gap-4 text-white" data-aos="fade-up">
+      <div className="grid md:grid-cols-3 gap-4  text-white" data-aos="fade-up">
         {galleryData.gallery.images.map((image, index) => (
           <div key={index} className="relative">
             <img
@@ -88,7 +88,7 @@ const Gallery = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50 rounded-lg">
               <div className="text-white text-center">
-                <h2 className="text-xl font-bold">{image.title}</h2>
+                <h2 className="md:text-xl font-bold">{image.title}</h2>
                 <p className="text-sm mt-2">{image.description}</p>
                 <Link
                   to={image.link}

@@ -28,7 +28,7 @@ const Banner = () => {
             <span className='block text-lg lg:text-xl mt-2 lg:mt-20 font-semibold mb-2 overflow-x-hidden' data-aos="slide-right">Innovative Ideas</span>
             <h1 className='text-3xl lg:text-5xl font-bold mb-4' data-aos="slide-left">We offer You A digital Platform</h1>
             <p className='p-2 max-w-lg mx-auto ml-[30px] lg:mx-0 text-sm lg:text-base' data-aos="slide-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi iusto ratione nemo culpa atque, laudantium ut nostrum consectetur animi quidem error rem impedit at. Dolorum ullam nemo assumenda nam!
+            At Ntechzy, we empower your brand with innovative digital marketing, expert social media management, and creative content production. From political campaigns to educational event management, and College ERP services to website development, we deliver solutions that drive success. Elevate your presence with our tailored branding and promotion strategies!
             </p>
             <div className='flex flex-col items-center lg:items-start mt-5'>
               <span className='text-white text-lg font-semibold' data-aos="slide-left">Get Started</span>

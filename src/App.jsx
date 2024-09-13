@@ -21,7 +21,7 @@ const App = () => {
     <Navbar/>
     {/* <ParticleComponent/> */}
     {/* <BubbleAnimation/> */}
-    {/* <ParticlesComponent id="particles"/> */}
+   
     <Routes>
     <Route path='/' exact element={<Home/>}/>
     <Route path='/about' exact element={<About/>}/>
@@ -29,6 +29,16 @@ const App = () => {
     <Route path='/contact-Us' exact element={<ContactUs/>}/>
     <Route path='/blog/*' exact element={<BlogPage/>}/>
     <Route path="/portfolio/*" element={<Portfolio />} />
+    <Route path="/collegebrandpromotion/offline&online" element={<Portfolio />} />
+    <Route path="/collegebrandpromotion/influencer-marketing" element={<Portfolio />} />
+    <Route path="/collegebrandpromotion/digital-campaigning-support" element={<Portfolio />} />
+    <Route path="/collegebrandpromotion/professional-admission-cell-assistance" element={<Portfolio />} />
+    <Route path="/collegebrandpromotion/website-seo" element={<Portfolio />} />
+    <Route path="/digital-marketing/search-engine-optimization" element={<Portfolio />} />
+    <Route path="/digital-marketing/social-media-management" element={<Portfolio />} />
+    <Route path="/digital-marketing/social-media-marketing" element={<Portfolio />} />
+    <Route path="/digital-marketing/social-media-marketing" element={<Portfolio />} />
+    <Route path="/digital-marketing/social-media-marketing" element={<Portfolio />} />
     {/* <Route path='/blog/:id' exact element={<BlogDetail/>}/> */}
     
     </Routes>
