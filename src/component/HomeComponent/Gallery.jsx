@@ -25,7 +25,7 @@ const galleryData = {
         link: "https://naiminathayurveda.org/",
       },
       {
-        src: "/assets/sakuntalaphoto.jpg",
+        src: "/assets/sasphoto.jpg",
         alt: "SAS Ayurveda College",
         title: "Sas Ayurveda College",
         buttonText: "Read More",
@@ -33,7 +33,8 @@ const galleryData = {
         link: "https://sasayurveda.com/",
       },
       {
-        src: "/assets/sasphoto.jpg",
+      
+        src: "/assets/sakuntalaphoto.jpg",
         alt: "Dr. Shakuntala Ayurvedic Medical college",
         title: "Dr. Shakuntala Ayurvedic Medical college",
         buttonText: "Read More",
