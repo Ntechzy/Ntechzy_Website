@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa6';
 
 const SocialMediaPic = () => {
   // Define social media data
   const socialMediaLinks = [
-    { platform: 'Instagram', icon: FaInstagram, link: 'https://www.instagram.com/' },
+    { platform: 'Instagram', icon: FaInstagram, link: 'https://www.instagram.com/ntechzy/?hl=en' },
     { platform: 'Twitter', icon: FaTwitter, link: 'https://twitter.com/Ntechzy' },
     { platform: 'Facebook', icon: FaFacebook, link: 'https://facebook.com/Ntechzy' },
-    { platform: 'LinkedIn', icon: FaFacebook, link: 'https://linkedin.com/company/Ntechzy' },
+    { platform: 'LinkedIn', icon: FaLinkedin, link: 'https://linkedin.com/company/Ntechzy' },
     // Ensure unique platforms for each link
   ];
 

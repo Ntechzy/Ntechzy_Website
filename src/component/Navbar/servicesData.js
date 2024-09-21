@@ -4,7 +4,7 @@ const serviceData = [
     subHeadings: [
       {
         subHeading: "Offline & Online",
-        url: "/services/college-branding/offline-online",
+        url: "/collegebrandpromotion/offline&online",
       },
       {
         subHeading: "Influencer Marketing",

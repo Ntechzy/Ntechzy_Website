@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="font-bold text-xl">Contact</div>
             <div className="text-xl">Phone no. : 7068595192
 </div>
-            <div className="text-xl">Email Id : ntechzy@gmail.com</div>
+            <div className="text-xl">Email Id : <Link to="mailto:ntechzy@gmail.com"> ntechzy@gmail.com</Link> </div>
             <div className="text-xl">Address : Gf - 31 , sng plaza ansal golf near by pari chowk greater Noida</div>
             <div className="text-xl">Working hours : 8</div>
           </div>
