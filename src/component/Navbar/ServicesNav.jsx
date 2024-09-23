@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import serviceData from './servicesData'; // Adjust the import path according to your folder structure
 
+// eslint-disable-next-line react/prop-types
 const ServicesNav = ({ closeMenu }) => {
   const [isMainMenuOpen, setMainMenuOpen] = useState(false);
   const [activeMainHeading, setActiveMainHeading] = useState(null);

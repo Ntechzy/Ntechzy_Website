@@ -10,8 +10,8 @@ import BlogPage from './Pages/BlogPage'
 import ScrollToTop from './Pages/ScrollToTop'
 import Portfolio from './Pages/Portfolio'
 import ServicesNav from './component/Navbar/ServicesNav'
+import Online_offline_page from './Pages/ServicesPages/CollegeBranding/OnlineOfflinePage'
 // import Offline_online from './component/ServicesComponent/Offline&Online/Offline_online'
-import Offline_online_page from './Pages/ServicesPages/CollegeBranding/Offline_online_page'
 // import BubbleAnimation from './component/ParticleComponent/Particles'
 // import ParticleComponent from './component/ParticleComponent/Particles'
 // import ParticlesComponent from './component/ParticleComponent/Particles'
@@ -31,7 +31,7 @@ const App = () => {
     <Route path='/contact-Us' exact element={<ContactUs/>}/>
     <Route path='/blog/*' exact element={<BlogPage/>}/>
     <Route path="/portfolio/*" element={<Portfolio />} />
-    <Route path="/collegebrandpromotion/offline&online" element={<Offline_online_page/>} />
+    <Route path="/collegebrandpromotion/offlineandonline" element={<Online_offline_page/>} />
     <Route path="/collegebrandpromotion/influencer-marketing" element={<Portfolio />} />
     <Route path="/collegebrandpromotion/digital-campaigning-support" element={<Portfolio />} />
     <Route path="/collegebrandpromotion/professional-admission-cell-assistance" element={<Portfolio />} />
