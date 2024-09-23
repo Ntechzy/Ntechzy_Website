@@ -42,7 +42,7 @@ const ServicesNav = ({ closeMenu }) => {
       <ul className="flex space-x-4">
         <li className="relative group">
           <span
-            className="text-white hover:text-gray-400 m-auto flex items-center justify-center text-center cursor-pointer transition-transform duration-300 md:sticky absolute  right-[-346px] mt-[-13px] p-[-4px] md:p-3"
+            className="text-white hover:text-gray-400 m-auto flex items-center justify-center text-center cursor-pointer transition-transform duration-300 md:sticky absolute  right-[-220px] mt-[-13px] p-[-4px] md:p-3"
             onClick={toggleMainMenu}
           >
           
