@@ -8,11 +8,12 @@ const Analytical = () => {
           <h1 className='text-2xl lg:text-3xl mb-4'>Analytical Skill</h1>
           <h1 className='font-bold text-3xl lg:text-5xl mb-4'>Advance Technology Tools & Platforms</h1>
           <p className='mb-6'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore odit dolor, nostrum qui dicta enim hic, accusamus adipisci necessitatibus aliquid facilis voluptates cupiditate minus animi. Non veritatis laborum ea voluptas!
+          Established in 2021, Ntechzy has grown into a comprehensive technology and marketing solutions provider, dedicated to helping businesses and institutions thrive in the digital age. Our wide-ranging expertise spans across IT services, including website and mobile application development, CRM, HMS, LMS, and custom portal development in industry-demanded coding languages. We also provide integrated branding and promotion, marketing consulting, digital marketing, and online visibility enhancement solutions, all tailored to meet the diverse needs of our clients.
+
           </p>
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+          {/* <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
             Read More
-          </button>
+          </button> */}
         </div>
 
         <div className='flex-1'>

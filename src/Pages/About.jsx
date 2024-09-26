@@ -7,13 +7,17 @@ import Marketing from '../component/HomeComponent/Marketing'
 import SocialMediaPic from '../component/HomeComponent/SocialMediaPic'
 import Footer from '../component/HomeComponent/Footer'
 import ReachUs from '../component/AboutComponent/ReachUs'
+import AboutContent from '../component/AboutComponent/AboutContent'
+import NikhilSir from '../component/AboutComponent/NikhilSir'
 
 function About() {
   return (
     <>
        <AboutBanner/>
 	   <Analytical/>
+	   <AboutContent/>
 	   <Strategy/>
+	   <NikhilSir/>
 	   <KnowUs/>
 	   <ReachUs/>
 	   <Marketing/>
