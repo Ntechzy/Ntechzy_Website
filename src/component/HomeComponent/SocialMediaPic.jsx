@@ -13,7 +13,7 @@ const SocialMediaPic = () => {
   ];
 
   return (
-    <div className='flex flex-wrap gap-5 p-4 justify-center lg:p-5 mx-auto max-w-7xl'>
+    <div className='flex flex-wrap gap-5 p-8 justify-center lg:p-5 mx-auto max-w-7xl'>
       {socialMediaLinks.map((social, index) => (
         <div
           key={index}

@@ -100,10 +100,10 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden h-full">
+    <div className="overflow-hidden h-full p-3">
       {/* Gallery heading */}
       <div
-        className="text-white text-center text-5xl font-bold mb-8"
+        className="text-white text-center md:text-5xl text-4xl font-bold mb-8"
         data-aos="flip-right"
       >
         {galleryData.gallery.heading}
@@ -111,7 +111,7 @@ const Gallery = () => {
 
       {/* Project Portfolio heading */}
       <div
-        className="text-white text-center text-5xl font-bold mb-8"
+        className="text-white text-center md:text-5xl text-3xl font-bold mb-8"
         data-aos="flip-left"
       >
         {galleryData.gallery.portfolioHeading}

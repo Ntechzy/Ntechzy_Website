@@ -48,11 +48,11 @@ const data=[
 const Strategy = () => {
   return (
     <div className='text-white py-12 px-4 lg:px-20'>
-      <div className='text-center mb-8' data-aos="flip-right">
+      <div className='text-center mb-8' data-aos="fade-up">
         <h1 className='text-2xl lg:text-3xl mb-4'>What We Do with Our 150+ Professional Team</h1>
         <h1 className='font-bold text-2xl lg:text-3xl'>Our Best Strategy</h1>
       </div>
-      <div className='grid grid-cols-1 lg:grid-cols-4 gap-8' data-aos="flip-up">
+      <div className='grid grid-cols-1 lg:grid-cols-4 gap-8' data-aos="fade-up">
       
         {data.map((item, index) => (
         <div key={index} className='group bg-gray-800 p-6 rounded-lg text-center transform transition duration-500 hover:bg-red-600 hover:-translate-y-2'>

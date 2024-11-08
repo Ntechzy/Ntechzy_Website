@@ -29,7 +29,7 @@ const ClientFeedback = () => {
         Client Feedback
       </div>
 
-      <div className='text-center mb-8 font-bold text-3xl md:text-4xl' data-aos="flip-left">
+      <div className='text-center mb-8 font-bold text-2xl md:text-4xl' data-aos="flip-left">
         Happy Words From Happy Customers
       </div>
 

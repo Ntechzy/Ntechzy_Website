@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <div className="text-white p-11">
+    <div className="text-white md:p-11 p-2">
       <div className="text-white font-bold text-3xl text-center">About Us</div>
       <div className="" data-aos="fade-up">
         <p className="p-3"  >
