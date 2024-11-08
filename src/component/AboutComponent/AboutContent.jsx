@@ -4,8 +4,8 @@ const AboutContent = () => {
   return (
     <div className="text-white p-11">
       <div className="text-white font-bold text-3xl text-center">About Us</div>
-      <div className="">
-        <p className="p-3" data-aos="fade-down-right">
+      <div className="" data-aos="fade-up">
+        <p className="p-3"  >
           At Ntechzy, we pride ourselves on offering end-to-end service
           operations that go beyond the surface. Our IT services cover the
           entire development lifecycle, from conceptualization and design to
@@ -16,7 +16,7 @@ const AboutContent = () => {
           secure solutions.
         </p>
 
-        <p className="p-3"data-aos="fade-down-left">
+        <p className="p-3">
           Our marketing operations are equally comprehensive, with a strong
           focus on enhancing online visibility and customer engagement. Our
           digital marketing services include search engine optimization (SEO),
@@ -28,7 +28,7 @@ const AboutContent = () => {
           behavior
         </p>
 
-        <p className="p-3"data-aos="fade-down-right">
+        <p className="p-3">
           In addition to IT and marketing, Ntechzy also provides branding and
           promotional services that ensure your brand stands out in today’s
           competitive landscape. From creating cohesive brand identities to
@@ -36,7 +36,7 @@ const AboutContent = () => {
           brand’s journey.
         </p>
 
-        <p className="p-3"data-aos="fade-down-left">
+        <p className="p-3">
           Serving the educational, medical, political, and entertainment
           sectors, our solutions are designed to meet the specific challenges of
           each industry. Our team of 150+ professionals, including IT
@@ -47,7 +47,7 @@ const AboutContent = () => {
           organizations, delivering measurable results and fostering long-term
           partnerships.
         </p>
-        <p className="p-3"data-aos="fade-down-right">
+        <p className="p-3">
           At Ntechzy, we believe in innovation, collaboration, and a
           client-first approach. Our mission is to empower our clients with the
           tools and strategies they need to achieve sustainable growth and

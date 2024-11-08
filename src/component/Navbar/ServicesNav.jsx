@@ -52,7 +52,7 @@ const ServicesNav = ({ closeMenu }) => {
             <ul className="absolute mt-2 bg-white font-semibold text-gray-800 shadow-lg rounded-md space-y-2 z-10 w-max">
               {serviceData.map((service, index) => (
                 <li
-                  key={index}
+                  key={index}a
                   className="relative group"
                 >
                   {/* Main heading click event for small screens */}
