@@ -15,7 +15,7 @@ const Marketing = () => {
   }, []);
 
   return (
-    <div className="text-white py-8 bg-gradient-to-r  rounded-lg shadow-lg" >
+    <div className="text-white py-8 bg-gradient-to-r  rounded-lg shadow-lg mt-2" >
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-2" data-aos="flip-right">It's Time To Take Your Digital Marketing To The Next Level</h1>
         <p className="text-xl">We Are Always Here To Help You Grow Your Business</p>

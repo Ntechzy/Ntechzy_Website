@@ -16,8 +16,8 @@ const Home = () => {
   <>
   <Banner/>
   {/* <Creative/> */}
-  <Gallery/>
   <Marketing/>
+  <Gallery/>
   <Services/>
   <ExpertAns/>
   <ClientFeedback/>

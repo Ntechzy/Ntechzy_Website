@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ServicesNav from "./ServicesNav";
 
@@ -13,20 +13,29 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  // Prevent scrolling when the mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    // Clean up by removing the class when the component is unmounted
+    return () => document.body.classList.remove("overflow-hidden");
+  }, [isMenuOpen]);
+
   return (
-    <nav className="sticky top-0 flex flex-wrap items-center justify-between p-4 bg-transparent text-white backdrop-blur-lg font-bold z-[10000]"> 
+    <nav className="sticky top-0 flex flex-wrap items-center justify-between p-4 bg-transparent text-white backdrop-blur-lg font-bold z-[10000]">
       {/* Logo */}
       <div className="logo text-2xl font-bold">
         <Link to="/" onClick={closeMenu} className="relative">
           <img
-            src="assets/ntechzy_logo_white_text.png"
+            src="assets/ntechzy-bg.png"
             alt="Ntechzy"
-            className="transition-transform  duration-300 hover:scale-110 hover:shadow-lg"
-
-            style={{ marginLeft:"30px", width: '80px', height: '30px',borderRadius:"15px"}}
+            className="transition-transform duration-300 hover:scale-110 hover:shadow-lg"
+            style={{ marginLeft: "10px", width: "200px", borderRadius: "15px" }}
           />
         </Link>
-        
       </div>
 
       {/* Hamburger Icon */}
@@ -55,7 +64,7 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden"
         } w-full lg:w-auto lg:flex-grow lg:items-center lg:justify-center mt-4 lg:mt-0`}
       >
-        <ul className="flex flex-col lg:flex-row lg:space-x-6 text-center lg:justify-end space-y-4 lg:space-y-0 text-xl">
+        <ul className="flex flex-col lg:flex-row lg:space-x-6 text-start lg:justify-end space-y-4 lg:space-y-0 text-xl">
           <li>
             <Link to="/" className="hover:text-gray-400" onClick={closeMenu}>
               Home
@@ -70,7 +79,6 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          {/* <li><Link to="/services" className="hover:text-gray-400" onClick={closeMenu}>Services</Link></li> */}
           <li className="relative">
             <ServicesNav closeMenu={closeMenu} />
           </li>
@@ -115,7 +123,7 @@ const Navbar = () => {
       {/* Action Button for Large Screens */}
       <div className="hidden lg:flex items-center">
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Let's Start
+          Let's Start 
         </button>
       </div>
     </nav>

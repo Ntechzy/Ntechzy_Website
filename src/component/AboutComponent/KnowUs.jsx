@@ -11,7 +11,6 @@ const KnowUs = () => {
       </div>
       <div className='p-4 m-3 font-semibold' data-aos="flip-right">
       At Ntechzy, we have a well-structured and organized approach to ensure each department functions efficiently while collaborating seamlessly to deliver comprehensive services. With three offices located in Uttar Pradesh—two in Kanpur (Kakadev and Pandu Nagar) and one in Greater Noida—each office is designed to meet the specific needs of our diverse client base. Here's how we differentiate our operations:
-
       </div>
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-8' data-aos="flip-up">
         {/* Service 1 */}
