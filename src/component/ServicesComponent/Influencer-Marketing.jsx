@@ -2,6 +2,7 @@ import React from "react";
 import CommonComponent from "./Common/CommonComponent";
 import CommonFaq from "./Common/CommonFaq";
 import Footer from "../HomeComponent/Footer";
+import CommonScroll from "./Common/CommonScroll";
 const data = [
   {
     question: "What Kind Of Services Do You Offer?",
@@ -42,6 +43,7 @@ const InfluencerMarketingCmp = () => {
         imageUrl="https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-4.jpg"
         rating={4.8}
       />
+      <CommonScroll/>
       <Footer />
     </div>
   );
