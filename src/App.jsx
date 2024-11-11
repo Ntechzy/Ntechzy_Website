@@ -11,6 +11,18 @@ import ScrollToTop from './Pages/ScrollToTop'
 import Portfolio from './Pages/Portfolio'
 import ServicesNav from './component/Navbar/ServicesNav' 
 import OnlineOfflinePage from './Pages/ServicesPages/CollegeBranding/OnlineOfflinePage'
+import InfluencerMarketing from './Pages/ServicesPages/CollegeBranding/InfluencerMarketing'
+import DigitalCampaiging from './Pages/ServicesPages/CollegeBranding/DigitalCampaiging'
+import ProfessionalAdmissionCell from './Pages/ServicesPages/CollegeBranding/ProfessionalAdmissionCell'
+import WebsiteSeo from './Pages/ServicesPages/CollegeBranding/WebsiteSeo'
+import SearchEngineOptimization from './Pages/ServicesPages/DigitalMarketing/SearchEngineOptimization'
+import SocialMediaManagement from './Pages/ServicesPages/DigitalMarketing/SocialMediaManagement'
+import SearchEngineMarketing from './Pages/ServicesPages/DigitalMarketing/SearchEngineMarketing'
+import Website from './Pages/ServicesPages/WebDesign/Website'
+import AppDevelopment from './Pages/ServicesPages/MobileApplication/AppDevelopment'
+import VideoServicesCmp from './component/ServicesComponent/VideoServicesCmp'
+import VideoServices from './Pages/ServicesPages/MediaServices/VideoServices'
+import CorporateShoot from './Pages/ServicesPages/MediaServices/CorporateShoot'
 // import Offline_online from './component/ServicesComponent/Offline&Online/Offline_online'
 // import BubbleAnimation from './component/ParticleComponent/Particles'
 // import ParticleComponent from './component/ParticleComponent/Particles'
@@ -27,28 +39,25 @@ const App = () => {
     <Routes>
     <Route path='/' exact element={<Home/>}/>
     <Route path='/about' exact element={<About/>}/>
-    <Route path='/services' exact element={<ServicesNav/>}/>
+    <Route path='/services/*' exact element={<ServicesNav/>}/>
     <Route path='/contact-Us' exact element={<ContactUs/>}/>
     <Route path='/blog/*' exact element={<BlogPage/>}/>
     <Route path="/portfolio/*" element={<Portfolio />} />
-    <Route path="/collegebrandpromotion/offlineandonline" element={<OnlineOfflinePage/>} />
-    <Route path="/collegebrandpromotion/influencer-marketing" element={<Portfolio />} />
-    <Route path="/collegebrandpromotion/digital-campaigning-support" element={<Portfolio />} />
-    <Route path="/collegebrandpromotion/professional-admission-cell-assistance" element={<Portfolio />} />
-    <Route path="/collegebrandpromotion/website-seo" element={<Portfolio />} />
-    <Route path="/digital-marketing/search-engine-optimization" element={<Portfolio />} />
-    <Route path="/digital-marketing/social-media-management" element={<Portfolio />} />
-    <Route path="/digital-marketing/social-media-marketing" element={<Portfolio />} />
-    <Route path="/web-design-and-development/E-commerce" element={<Portfolio />} />
-    <Route path="/web-design-and-development/portfolios" element={<Portfolio />} />
-    <Route path="/web-design-and-development/education" element={<Portfolio />} />
-    <Route path="/web-design-and-development/corporate" element={<Portfolio />} />
-    <Route path="/mobile-development/" element={<Portfolio />} />
-    <Route path="/media-services/video-services" element={<Portfolio />} />
-    <Route path="/media-services/corporate-shoot" element={<Portfolio />} />
-    <Route path="/media-services/campus-tour" element={<Portfolio />} />
-    <Route path="/media-services/motion-graphic-animation-video" element={<Portfolio />} />
-    <Route path="/media-services/documentary" element={<Portfolio />} />
+    <Route path="/services/college-branding/offlineandonline" element={<OnlineOfflinePage/>} />
+    <Route path="/services/college-branding/influencer-marketing" element={<InfluencerMarketing />} />
+    <Route path="/services/college-branding/digital-campaigning" element={<DigitalCampaiging />} />
+    <Route path="/services/college-branding/admission-cell" element={<ProfessionalAdmissionCell/>} />
+    <Route path= "/services/college-branding/website-seo" element={<WebsiteSeo/>} />
+    <Route path="/services/digital-marketing/search-engine-optimization" element={<SearchEngineOptimization />} />
+    <Route path="/services/digital-marketing/social-media-management" element={<SocialMediaManagement/>} />
+    <Route path="/services/digital-marketing/search-engine-marketing" element={<SearchEngineMarketing />} />
+    <Route path="/services/web-design-and-development" element={<Website/>} />
+    <Route path="/services/mobile-app-development" element={<AppDevelopment />} />
+    <Route path="/services/media/video-services" element={<VideoServices />} />
+    <Route path="/services/media/corporate-shoot" element={<CorporateShoot />} />
+    {/* <Route path="/services/media/campus-tour" element={<Portfolio />} />
+    <Route path="/services/media/motion-graphics" element={<Portfolio />} />
+    <Route path="/services/media/documentary" element={<Portfolio />} /> */}
     {/* <Route path='/blog/:id' exact element={<BlogDetail/>}/> */}
     
     </Routes>

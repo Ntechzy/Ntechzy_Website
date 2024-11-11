@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import OnlineOfflineComponent from '../../../component/ServicesComponent/OnlineOfflineComponent/OnlineOfflineComponent'
+import OnlineOfflineComponent from '../../../component/ServicesComponent/OnlineOfflineComponent'
 
 const OnlineOfflinePage = () => {
   return (

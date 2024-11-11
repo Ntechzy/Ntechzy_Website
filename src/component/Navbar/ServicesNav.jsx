@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import serviceData from './servicesData'; // Adjust the import path according to your folder structure
@@ -37,6 +36,13 @@ const ServicesNav = ({ closeMenu }) => {
     }
   };
 
+  // Function to handle closing the menu and clearing the active heading
+  const handleServiceClick = () => {
+    setMainMenuOpen(false); // Close the menu
+    setActiveMainHeading(null); // Clear active heading
+    closeMenu(); // Trigger the closeMenu prop (if needed for other components)
+  };
+
   return (
     <nav className="relative" ref={menuRef}>
       <ul className="flex space-x-4">
@@ -45,30 +51,45 @@ const ServicesNav = ({ closeMenu }) => {
             className="text-white hover:text-gray-400 m-auto flex items-center justify-center text-center cursor-pointer transition-transform duration-300 md:sticky "
             onClick={toggleMainMenu}
           >
-          
             Services
           </span>
           {isMainMenuOpen && (
             <ul className="absolute mt-2 bg-white font-semibold text-gray-800 shadow-lg rounded-md space-y-2 z-10 w-max">
               {serviceData.map((service, index) => (
-                <li
-                  key={index}a
-                  className="relative group"
-                >
-                  {/* Main heading click event for small screens */}
-                  <span
-                    className="block px-4 py-2 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => handleMainHeadingClick(index)} // Handle click for both small and larger screens
-                  >
-                    {service.mainHeading}
-                  </span>
+                <li key={index} className="relative group">
+                  {/* Main heading */}
+                  {service.url ? (
+                    // If there is a URL, make it a link
+                    <Link
+                      to={service.url}
+                      className="block px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                      onClick={() => {
+                        handleServiceClick(); // Close the menu
+                      }}
+                    >
+                      {service.mainHeading}
+                    </Link>
+                  ) : (
+                    // Otherwise, just a clickable span
+                    <span
+                      className="block px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                      onClick={() => handleMainHeadingClick(index)}
+                    >
+                      {service.mainHeading}
+                    </span>
+                  )}
 
                   {/* Subheadings for small screens */}
                   {activeMainHeading === index && (
                     <ul className="space-y-2 border-2 border-blue-100 bg-gray-300 text-gray-800 rounded-md md:hidden">
                       {service.subHeadings.map((sub, subIndex) => (
                         <li key={subIndex} className="px-4 py-2 hover:bg-gray-200">
-                          <Link to={sub.url} onClick={closeMenu}>
+                          <Link
+                            to={sub.url}
+                            onClick={() => {
+                              handleServiceClick(); // Close the menu
+                            }}
+                          >
                             {sub.subHeading}
                           </Link>
                         </li>
@@ -81,7 +102,12 @@ const ServicesNav = ({ closeMenu }) => {
                     <ul className="hidden md:absolute top-0 left-full ml-2 bg-gray-100 text-gray-800 shadow-lg rounded-md space-y-2 w-max md:block">
                       {service.subHeadings.map((sub, subIndex) => (
                         <li key={subIndex} className="px-4 py-2 hover:bg-gray-200">
-                          <Link to={sub.url} onClick={closeMenu}>
+                          <Link
+                            to={sub.url}
+                            onClick={() => {
+                              handleServiceClick(); // Close the menu
+                            }}
+                          >
                             {sub.subHeading}
                           </Link>
                         </li>
