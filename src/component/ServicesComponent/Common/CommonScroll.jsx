@@ -11,7 +11,7 @@ const CommonScroll = () => {
     "/assets/logo6.jpeg",
     "/assets/logo7.jpg",
     "/assets/logo8.jpg",
-    "/assets/logo9.png",
+    // "/assets/logo9.png",
     "/assets/logo10.jpg",
     "/assets/logo11.jpg",
     // "/assets/logo12.png",
@@ -24,7 +24,7 @@ Our Clients
     </div>
     <div className="relative overflow-hidden w-full h-40 bg-white">
      
-     <div className="absolute flex items-center justify-start animate-scroll-infinite gap-8">
+     <div className="absolute flex items-center justify-start animate-scroll-infinite gap-10">
        {logos.concat(logos).map((logo, index) => (
          <div key={index} className="w-[150px] h-[100px] bg-transparent">
            <img

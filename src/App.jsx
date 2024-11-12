@@ -23,6 +23,8 @@ import AppDevelopment from './Pages/ServicesPages/MobileApplication/AppDevelopme
 import VideoServicesCmp from './component/ServicesComponent/VideoServicesCmp'
 import VideoServices from './Pages/ServicesPages/MediaServices/VideoServices'
 import CorporateShoot from './Pages/ServicesPages/MediaServices/CorporateShoot'
+import CampusTour from './Pages/ServicesPages/MediaServices/CampusTour'
+import PodcastShoot from './Pages/ServicesPages/MediaServices/PodcastShoot'
 // import Offline_online from './component/ServicesComponent/Offline&Online/Offline_online'
 // import BubbleAnimation from './component/ParticleComponent/Particles'
 // import ParticleComponent from './component/ParticleComponent/Particles'
@@ -55,9 +57,10 @@ const App = () => {
     <Route path="/services/mobile-app-development" element={<AppDevelopment />} />
     <Route path="/services/media/video-services" element={<VideoServices />} />
     <Route path="/services/media/corporate-shoot" element={<CorporateShoot />} />
-    {/* <Route path="/services/media/campus-tour" element={<Portfolio />} />
-    <Route path="/services/media/motion-graphics" element={<Portfolio />} />
-    <Route path="/services/media/documentary" element={<Portfolio />} /> */}
+    <Route path="//services/media/podcast-setup" element={<PodcastShoot />} />
+   {/* <Route path="/services/media/campus-tour" element={<CampusTour />} />s */}
+    {/* <Route path="/services/media/motion-graphics" element={<Portfolio />} />
+    <Route path="/services/media/documentary" element={<Portfolio />} />  */}
     {/* <Route path='/blog/:id' exact element={<BlogDetail/>}/> */}
     
     </Routes>

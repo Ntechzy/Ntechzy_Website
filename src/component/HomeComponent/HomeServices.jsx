@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
@@ -6,96 +7,108 @@ const Services = () => {
   const servicesData = [
     {
       title: 'College Branding and Promotion Offline & Online',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Our College Branding and Promotion services at Ntechzy Pvt Ltd are designed to elevate the ...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service1',
+      link: '/services/college-branding/offlineandonline',
     },
     {
       title: 'Influencer Marketing',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Influencer Marketing with Ntechzy Pvt Ltd harnesses the power of trusted voices in your industry to promote your brand...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service2',
+      link: '/services/college-branding/influencer-marketing',
     },
     {
       title: 'Digital Campaigning Support',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Digital campaigns are crucial in the digital age, and Ntechzy Pvt Ltd specializes in providing...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service3',
+      link: '/services/college-branding/digital-campaigning',
     },
     {
       title: 'Professional Admission Cell Assistance',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Ntechzy Pvt Ltd offers Professional Admission Cell Assistance to colleges...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service4',
+      link: '/services/college-branding/admission-cell',
     },
-   
     {
       title: 'Search Engine Optimization (SEO)',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Search Engine Optimization (SEO) is fundamental to increasing your online visibility...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service6',
+      link: '/services/digital-marketing/search-engine-optimization',
     },
     {
       title: 'Social Media Management',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Our Social Media Management service helps you establish a strong social media presence...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service7',
+      link: '/services/digital-marketing/social-media-management',
     },
     {
       title: 'Search Engine Marketing (SEM)',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Search Engine Marketing (SEM) with Ntechzy Pvt Ltd is designed to boost your online...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service8',
+      link: '/services/digital-marketing/search-engine-marketing',
     },
     {
       title: 'Website SEO',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Ntechzy Pvt Ltd provides Website SEO services focused on optimizing your website...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
+      link: '/services/college-branding/website-seo',
     },
     {
       title: 'Website Design and Development',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Our Website Design and Development service is aimed at creating visually appealing...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
+      link: '/services/web-design-and-development',
     },
     {
       title: 'Mobile App Development',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'In today’s mobile-first world, Mobile App Development is crucial, and Ntechzy Pvt Ltd...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
+      link: '/services/mobile-app-development',
     },
     {
       title: 'Video Services',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'Our Video Services at Ntechzy Pvt Ltd cover all aspects of video production, from ideation to...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
+      link: '/services/media/video-services',
     },
     {
       title: 'Corporate shoot',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      description: 'For businesses looking to capture their corporate environment, Ntechzy Pvt Ltd offers...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
+      link: '/services/media/corporate-shoot',
     },
     {
-      title: 'Campus Tour',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+      title: 'Podcast Setup (From Shoot to Editing)',
+      description: 'Ntechzy Pvt Ltd provides comprehensive Podcast Setup services, covering everything from...',
       imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
+      link: '/services/media/podcast-setup',
     },
-    {
-      title: 'Motion Graphic Animated Video',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
-      imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
-    },
-    {
-      title: 'Documentary',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
-      imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
-      link: '#service5',
-    },
+    // {
+    //   title: 'Campus Tour',
+    //   description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+    //   imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+    //   link: '#service5',  // No route specified for this one, leaving as a placeholder
+    // },
+    // {
+    //   title: 'Motion Graphic Animated Video',
+    //   description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+    //   imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+    //   link: '#service5',  // No route specified for this one, leaving as a placeholder
+    // },
+    // {
+    //   title: 'Documentary',
+    //   description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+    //   imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+    //   link: '#service5',  // No route specified for this one, leaving as a placeholder
+    // },
+    // {
+    //   title: 'PodCast SetUp (From Shoot to Editing)',
+    //   description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, sunt!',
+    //   imageUrl: 'https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-5-1.jpg',
+    //   link: '#service5',  // No route specified for this one, leaving as a placeholder
+    // },
   ];
+  
 
   return (
     <div className="py-8 px-4 text-white" >
@@ -111,12 +124,13 @@ const Services = () => {
           >
             <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
             <p className="mb-4">{service.description}</p>
-            <button
+            <Link to={service.link} target="_blank"
               className="bg-blue-500 text-white px-4 py-2 rounded"
-              onClick={() => window.location.href = service.link}
+              onMouseEnter={() => setHoverIndex(index)}
+              onMouseLeave={() => setHoverIndex(null)}
             >
               Know More
-            </button>
+            </Link>
             <div className={`transition-all duration-300 ${hoverIndex === index ? 'max-h-32' : 'max-h-0'} overflow-hidden mt-4`}>
               {/* <img
                 // src={service.imageUrl}

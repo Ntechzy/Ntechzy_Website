@@ -1,22 +1,23 @@
 import React from 'react';
 import { FiFacebook } from "react-icons/fi";
-import { FaInstagram ,FaLinkedinIn} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaCirclePlay } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+
 const Banner = () => {
   return (
     <div className='bg-cover bg-center h-full flex flex-col justify-center overflow-hidden'>
       <div className='flex flex-col lg:flex-row lg:items-center gap-11'>
-        {/* Social Media Icons */}
-        <div className='flex lg:flex-col items-center lg:items-start gap-6 lg:gap-6 mt-4 lg:mt-40' data-aos="flip-down">
+        {/* Social Media Icons - Hidden on mobile */}
+        <div className='flex lg:flex-col items-center lg:items-start gap-6 lg:gap-6 mt-4 lg:mt-40 hidden lg:flex' data-aos="flip-down">
           {/* Updated Icons */}
-          <Link to ="https://www.facebook.com/ntechzypvtltd/" target="_blank"className='bg-white p-2 rounded-full'>
+          <Link to="https://www.facebook.com/ntechzypvtltd/" target="_blank" className='bg-white p-2 rounded-full'>
             <FiFacebook className='text-blue-600 text-2xl cursor-pointer' />
           </Link>
-          <Link to ="https://in.linkedin.com/company/ntechzy" target="_blank" className='bg-white p-2 rounded-full'>
+          <Link to="https://in.linkedin.com/company/ntechzy" target="_blank" className='bg-white p-2 rounded-full'>
             <FaLinkedinIn className='text-pink-600 text-2xl cursor-pointer' />
           </Link>
-          <Link to ="https://www.instagram.com/ntechzy/?hl=en" target="_blank" className='bg-white p-2 rounded-full'>
+          <Link to="https://www.instagram.com/ntechzy/?hl=en" target="_blank" className='bg-white p-2 rounded-full'>
             <FaInstagram className='text-blue-400 text-2xl cursor-pointer' />
           </Link>
         </div>
@@ -28,7 +29,7 @@ const Banner = () => {
             <span className='block text-lg lg:text-xl mt-2 lg:mt-20 font-semibold mb-2 overflow-x-hidden' data-aos="slide-right">Innovative Ideas</span>
             <h1 className='text-3xl lg:text-5xl font-bold mb-4' data-aos="slide-left">We offer You A digital Platform</h1>
             <p className='p-2 max-w-lg mx-auto ml-[30px] lg:mx-0 text-sm lg:text-base' data-aos="slide-left">
-            At Ntechzy, we empower your brand with innovative digital marketing, expert social media management, and creative content production. From political campaigns to educational event management, and College ERP services to website development, we deliver solutions that drive success. Elevate your presence with our tailored branding and promotion strategies!
+              At Ntechzy, we empower your brand with innovative digital marketing, expert social media management, and creative content production. From political campaigns to educational event management, and College ERP services to website development, we deliver solutions that drive success. Elevate your presence with our tailored branding and promotion strategies!
             </p>
             <div className='flex flex-col items-center lg:items-start mt-5'>
               <span className='text-white text-lg font-semibold' data-aos="slide-left">Get Started</span>

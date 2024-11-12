@@ -55,6 +55,7 @@ const serviceData = [
     subHeadings: [
       { subHeading: "Video Services", url: "/services/media/video-services" },
       { subHeading: "Corporate Shoot", url: "/services/media/corporate-shoot" },
+      { subHeading: "PodCast SetUp", url: "/services/media/podcast-setup" },
       // { subHeading: "Campus Tour", url: "/services/media/campus-tour" },
       // {
       //   subHeading: "Motion Graphic Animated Video",

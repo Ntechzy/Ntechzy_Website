@@ -22,8 +22,8 @@ const OurBranches = () => {
           ></iframe>
           <div className="font-bold p-2 flex flex-row gap-2 lg:gap-4 text-center lg:text-left">
             <address>Kanpur Office</address>
-            <address>Phone no: 5678998765</address>
-            <address>Email Id: xyz@gmail.com</address>
+            <address>Phone no:+91 8189098663</address>
+            <address>Email Id: info@ntechzy.in</address>
           </div>
         </div>
         <div className="flex flex-col items-center lg:items-start">

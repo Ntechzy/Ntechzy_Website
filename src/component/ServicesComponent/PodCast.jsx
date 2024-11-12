@@ -27,12 +27,12 @@ const data = [
 ];
 const data2 = [
   {
-    heading: "Campus Tour",
+    heading: "Podcast Setup (From Shoot to Editing)",
     content:
-    "Search Engine Marketing (SEM) with Ntechzy Pvt Ltd is designed to boost your online visibility through paid advertising on search engines. Our SEM specialists create targeted ads that appear at the top of search results, reaching your potential customers at the exact moment they are searching for your products or services. We manage everything from ad creation and budget allocation to monitoring and optimization, ensuring maximum return on investment (ROI). Our SEM campaigns are data-driven, transparent, and tailored to align with your business objectives.",
+      "Ntechzy Pvt Ltd provides comprehensive Podcast Setup services, covering everything from shooting to editing. We handle the technical aspects of podcast production, including audio setup, recording, video capture, and post-production editing. Our team ensures that your podcast has professional-quality sound and visuals, enhancing the overall listening and viewing experience. With our expertise, you can focus on delivering compelling content, while we take care of the production details.",
   },
 ];
-const CampusTourCmp = () => {
+const PodCast= () => {
   return (
     <div>
       <CommonComponent data2={data2} />
@@ -49,4 +49,4 @@ const CampusTourCmp = () => {
   );
 };
 
-export default CampusTourCmp;
+export default PodCast;

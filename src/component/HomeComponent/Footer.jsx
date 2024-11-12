@@ -26,7 +26,7 @@ const Footer = () => {
 </div>
             <div className="text-xl">Email Id : <Link to="mailto:ntechzy@gmail.com"> ntechzy@gmail.com</Link> </div>
             <div className="text-xl">Address : Gf - 31 , sng plaza ansal golf near by pari chowk greater Noida</div>
-            <div className="text-xl">Working hours : 8</div>
+          
           </div>
           <div className="space-y-4 md:ml-6 lg:ml-0" data-aos="flip-left">
             <div className="font-bold text-xl">Services</div>
@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="text-xl">Digital Marketing</div>
             <div className="text-xl">Software Development</div>
             <div className="text-xl">Counselling</div>
-            <div className="text-xl">Political Campai</div>
+            <div className="text-xl">Political Campaign</div>
             <div className="text-xl">Online Hospital System</div>
             <div className="text-xl">Online Application System</div>
             <div className="text-xl">Social Media Marketing</div>

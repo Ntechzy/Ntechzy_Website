@@ -49,7 +49,7 @@ const ClientFeedback = () => {
             </div>
             <div className='flex items-center ml-4' data-aos="flip-right">
               <img src='/assets/clientlogo.png' alt='Client 1' className='rounded-full w-12 h-12 md:w-16 md:h-16 mb-2 mr-2' data-aos="fade-up" />
-              <div className='text-base md:text-lg font-semibold'>S.D. Singh Ayurvedic College & Hospital</div>
+              <div className='text-base md:text-lg font-semibold'>Major S.D. Singh Ayurvedic Medical College & Hospital Farrukhabad</div>
             </div>
           </div>
         </div>
