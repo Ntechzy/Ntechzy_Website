@@ -25,6 +25,9 @@ import VideoServices from './Pages/ServicesPages/MediaServices/VideoServices'
 import CorporateShoot from './Pages/ServicesPages/MediaServices/CorporateShoot'
 import CampusTour from './Pages/ServicesPages/MediaServices/CampusTour'
 import PodcastShoot from './Pages/ServicesPages/MediaServices/PodcastShoot'
+import Carrier from './Pages/Carrier'
+import JobOpening from './component/CarrierPage/JobOpening'
+import CompanyLife from './component/CarrierPage/CompanyLife'
 // import Offline_online from './component/ServicesComponent/Offline&Online/Offline_online'
 // import BubbleAnimation from './component/ParticleComponent/Particles'
 // import ParticleComponent from './component/ParticleComponent/Particles'
@@ -45,6 +48,8 @@ const App = () => {
     <Route path='/contact-Us' exact element={<ContactUs/>}/>
     <Route path='/blog/*' exact element={<BlogPage/>}/>
     <Route path="/portfolio/*" element={<Portfolio />} />
+    <Route path="/carrier/*" element={<Carrier/>} />
+    {/* <Route path="/carrier/lifeAtNtechzy" element={<CompanyLife/>} /> */}
     <Route path="/services/college-branding/offlineandonline" element={<OnlineOfflinePage/>} />
     <Route path="/services/college-branding/influencer-marketing" element={<InfluencerMarketing />} />
     <Route path="/services/college-branding/digital-campaigning" element={<DigitalCampaiging />} />
@@ -57,7 +62,7 @@ const App = () => {
     <Route path="/services/mobile-app-development" element={<AppDevelopment />} />
     <Route path="/services/media/video-services" element={<VideoServices />} />
     <Route path="/services/media/corporate-shoot" element={<CorporateShoot />} />
-    <Route path="//services/media/podcast-setup" element={<PodcastShoot />} />
+    <Route path="/services/media/podcast-setup" element={<PodcastShoot />} />
    {/* <Route path="/services/media/campus-tour" element={<CampusTour />} />s */}
     {/* <Route path="/services/media/motion-graphics" element={<Portfolio />} />
     <Route path="/services/media/documentary" element={<Portfolio />} />  */}

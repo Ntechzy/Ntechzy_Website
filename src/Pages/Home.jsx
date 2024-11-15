@@ -11,6 +11,7 @@ import ClientFeedback from '../component/HomeComponent/ClientFeedback'
 import Blog from '../component/HomeComponent/Blog'
 import SocialMediaPic from '../component/HomeComponent/SocialMediaPic'
 import Footer from '../component/HomeComponent/Footer'
+import InstagramPost from '../component/HomeComponent/InstagramPost'
 const Home = () => {
   return (
   <>
@@ -21,7 +22,8 @@ const Home = () => {
   <Services/>
   <ExpertAns/>
   <ClientFeedback/>
-  <Blog/>
+  {/* <Blog/> */}
+  <InstagramPost/>
   <SocialMediaPic/>
   <Footer/>
   

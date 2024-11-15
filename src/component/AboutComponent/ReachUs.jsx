@@ -6,7 +6,7 @@ const ReachUs = ({props}) => {
       {/* Picture Section */}
       <div className='w-full lg:w-1/2 p-4'data-aos="flip-right">
         <img 
-          src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/gaaga-Process-Content-Img-1-1.png" 
+          src="/assets/reachus.jpg" 
           alt="Reach Us" 
           className='w-full h-auto rounded-lg'
         />

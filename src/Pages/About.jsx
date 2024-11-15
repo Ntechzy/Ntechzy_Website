@@ -19,7 +19,7 @@ function About() {
 	   <Strategy/>
 	   <NikhilSir/>
 	   <KnowUs/>
-	   <ReachUs/>
+	   {/* <ReachUs/> */}
 	   <Marketing/>
 	   <SocialMediaPic/>
 	   <Footer/>

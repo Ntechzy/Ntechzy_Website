@@ -18,7 +18,7 @@ const Analytical = () => {
 
         <div className='flex-1'>
           <img 
-            src="https://gaaga.wpengine.com/wp-content/uploads/2023/06/gaaga-Process-Content-Img-1-1.png" 
+            src="/assets/officebuilding.jpg" 
             alt="Analytical Tools"
             className='w-full h-auto object-cover rounded-lg' data-aos="flip-right"
           />

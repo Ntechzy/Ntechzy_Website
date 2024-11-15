@@ -93,6 +93,15 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="/carrier"
+              className="hover:text-gray-400"
+              onClick={closeMenu}
+            >
+              Career
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/blog"
               className="hover:text-gray-400"
               onClick={closeMenu}
