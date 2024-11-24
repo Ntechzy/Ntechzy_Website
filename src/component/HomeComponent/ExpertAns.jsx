@@ -55,7 +55,7 @@ const ExpertAns = () => {
         {/* TrustPilot Section */}
         <div className='flex flex-col items-center justify-center'>
           <div className='mb-4'>
-            <img src='https://gaaga.wpengine.com/wp-content/uploads/2023/06/home-portfolio-listing-images-4.jpg' alt='TrustPilot' className='w-full h-full object-cover rounded-lg' data-aos="flip-up"/>
+            <img src='/assets/faq.png' alt='TrustPilot' className='w-full h-full object-cover rounded-lg' data-aos="flip-up"/>
           </div>
           <div className='flex flex-col justify-center'>
             <div className='text-lg font-semibold'>TrustPilot</div>
