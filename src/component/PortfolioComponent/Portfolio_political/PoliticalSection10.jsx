@@ -9,7 +9,7 @@ const PoliticalSection10 = () => {
        </div>
       <div className='font-bold md:w-[70%] text-center pt-9 bg-red-500 '>
       <div className=' text-2xl md:text-6xl'>
-            EXCITED TO TEAM UP WITH TEAM NTECHZY PVT LTD
+            EXCITED TO TEAM UP WITH TEAM NTECHZY PVT. LTD.
         </div>
         <div className='md:mt-20 mt-11 md:flex md:items-center gap-7  bg-white text-black p-4 justify-center m-auto w-[90%] rounded-lg '>
            <div className='flex flex-row items-center justify-center text-2xl p-4 gap-0 md:text-3xl md:gap-6'>
