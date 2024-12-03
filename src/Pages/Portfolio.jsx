@@ -14,6 +14,7 @@ import Portfolio_political from "../component/PortfolioComponent/Portfolio_polit
 import PortfolioDetailPolitical from "../component/PortfolioComponent/Portfolio_spotlight/PortfolioDetailSpotlight";
 import Portfolio_spotlight from "../component/PortfolioComponent/Portfolio_spotlight/Portfolio_spotlight";
 import PortfolioDetailSpotlight from "../component/PortfolioComponent/Portfolio_spotlight/PortfolioDetailSpotlight";
+import PoliticalPage from "./PoliticalPage";
 
 const Portfolio = () => {
   return (
@@ -24,8 +25,8 @@ const Portfolio = () => {
           <Route path="/" element={<Portfolio_ntechzy />} />
           <Route path="/ntechzy" element={<Portfolio_ntechzy />} />
           <Route path="/ntechzy/:id" element={<Portfolio_ntechzy_Details />} />
-          <Route path="/political_campaign" element={<Portfolio_political />} />
-          <Route path="/political_campaign/:id" element={<PortfolioDetailPolitical/>} />
+          <Route path="/political_campaign" element={<PoliticalPage/>} />
+          <Route path="/political_campaign/:id" element={<PoliticalPage/>} />
           <Route path="/SpotlightWithNikhil" element={<Portfolio_spotlight />} />
           <Route path="/SpotlightWithNikhil/:id" element={<PortfolioDetailSpotlight />} />
         </Routes>
