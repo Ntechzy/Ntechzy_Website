@@ -4,21 +4,21 @@ import React from "react";
 const posts = [
   {
     id: 1,
-    imageUrl: '/assets/podban1.jpg',
+    imageUrl: '/assets/podban1.avif',
     caption: "Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     likes: 240,
     instagramUrl: "https://www.instagram.com/ntechzy/?hl=en"
   },
   {
     id: 2,
-    imageUrl: '/assets/podban2.jpg',
+    imageUrl: '/assets/podban2.avif',
     caption: "Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     likes: 350,
     instagramUrl: "https://www.instagram.com/ntechzy/?hl=en" 
   },
   {
     id: 3,
-    imageUrl: '/assets/podban3.jpg',
+    imageUrl: '/assets/podban3.avif',
     caption: "Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     likes: 150,
     instagramUrl: "https://www.instagram.com/ntechzy/?hl=en"
@@ -27,7 +27,7 @@ const posts = [
 
 const InstagramPosts = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8" data-aos="fade-up">
       {/* Heading */}
       <h2 className="text-center text-3xl font-bold text-white mt-10 mb-6">
         Social Media Glimpse

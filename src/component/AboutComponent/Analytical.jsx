@@ -18,7 +18,7 @@ const Analytical = () => {
 
         <div className='flex-1'>
           <img 
-            src="/assets/officebuilding.jpg" 
+            src="/assets/officebuilding.avif" 
             alt="Analytical Tools"
             className='w-full h-auto object-cover rounded-lg' data-aos="flip-right"
           />
